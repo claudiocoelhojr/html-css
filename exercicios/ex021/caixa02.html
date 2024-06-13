@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(133, 133, 133);
+    margin: 0;
+}
+
+header{
+    background-color: azure;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+header > h1{
+    text-align: center;
+}
+
+section > div{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+section > div:hover{
+    text-decoration: underline;
+    color: rgb(0, 3, 151);
+}
+
+aside > p{
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(92, 92, 92);
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px black;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    text-align: right;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: lightskyblue;
+}
+
+main{
+    background-color: azure;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+article{
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+article > aside{
+    background-color: rgb(161, 161, 161);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p{
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Lin</a>
+            <a href="#">Lin</a>
+            <a href="#">Lin</a>
+            <a href="#">Lin</a>
+            <a href="#">Lin</a>
+            </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <div style="display: inline-block;">Esportes</div>
+            <div style="display: inline-block;">Tecnologia</div>
+            <div style="display: inline-block;">Lazer</div>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium suscipit nam sint eos quo natus blanditiis aut sit itaque, consequatur quia deleniti saepe, impedit at modi inventore iste illum id!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>
