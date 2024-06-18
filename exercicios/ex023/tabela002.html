@@ -12,6 +12,15 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px 10px 0px 0px;
         }
 
         td, th {
@@ -20,8 +29,22 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /*Colado*/
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /*2n-1*/
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) { /*2n*/
+            background-color: rgb(253, 255, 252);
         }
 
         .num {
@@ -42,10 +65,11 @@
             TR, TD, TH
     -->
 <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </tr>
     </thead>
     <tbody>
@@ -158,11 +182,15 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>203.062.512</strong></td>
         </tr>
         <tr></tr>
     </tfoot>
 </table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi assumenda provident sed odit, eveniet perspiciatis modi, ex quo unde laboriosam et non architecto numquam ullam dolorum cum esse tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore asperiores quidem nisi nulla enim sequi recusandae nostrum, quisquam maxime fugit impedit vero, error veniam consequatur ratione autem mollitia quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio asperiores vel delectus laboriosam? Corrupti voluptatum aperiam ab quia, porro cum harum nostrum vero, numquam, in perspiciatis mollitia sed eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem atque nesciunt praesentium quibusdam dolores sit dolore itaque officia labore impedit, earum facere quaerat adipisci, blanditiis aliquam? Culpa laborum maiores quasi.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi assumenda provident sed odit, eveniet perspiciatis modi, ex quo unde laboriosam et non architecto numquam ullam dolorum cum esse tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore asperiores quidem nisi nulla enim sequi recusandae nostrum, quisquam maxime fugit impedit vero, error veniam consequatur ratione autem mollitia quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio asperiores vel delectus laboriosam? Corrupti voluptatum aperiam ab quia, porro cum harum nostrum vero, numquam, in perspiciatis mollitia sed eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem atque nesciunt praesentium quibusdam dolores sit dolore itaque officia labore impedit, earum facere quaerat adipisci, blanditiis aliquam? Culpa laborum maiores quasi.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi assumenda provident sed odit, eveniet perspiciatis modi, ex quo unde laboriosam et non architecto numquam ullam dolorum cum esse tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore asperiores quidem nisi nulla enim sequi recusandae nostrum, quisquam maxime fugit impedit vero, error veniam consequatur ratione autem mollitia quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio asperiores vel delectus laboriosam? Corrupti voluptatum aperiam ab quia, porro cum harum nostrum vero, numquam, in perspiciatis mollitia sed eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem atque nesciunt praesentium quibusdam dolores sit dolore itaque officia labore impedit, earum facere quaerat adipisci, blanditiis aliquam? Culpa laborum maiores quasi.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi assumenda provident sed odit, eveniet perspiciatis modi, ex quo unde laboriosam et non architecto numquam ullam dolorum cum esse tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore asperiores quidem nisi nulla enim sequi recusandae nostrum, quisquam maxime fugit impedit vero, error veniam consequatur ratione autem mollitia quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio asperiores vel delectus laboriosam? Corrupti voluptatum aperiam ab quia, porro cum harum nostrum vero, numquam, in perspiciatis mollitia sed eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem atque nesciunt praesentium quibusdam dolores sit dolore itaque officia labore impedit, earum facere quaerat adipisci, blanditiis aliquam? Culpa laborum maiores quasi.</p>
 </body>
 </html>
