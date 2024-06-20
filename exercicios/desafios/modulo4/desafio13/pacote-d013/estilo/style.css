@@ -62,7 +62,3 @@ iframe#tela {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.573);
     transition: transform .3s, border .2s;
 }
-
-section > iframe {
-    width: 80%;
-}
