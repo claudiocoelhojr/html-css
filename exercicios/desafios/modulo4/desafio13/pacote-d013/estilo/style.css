@@ -1,15 +1,17 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 html, body {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
 body {
@@ -39,7 +41,7 @@ iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 267px;
+    width: 269px;
     height: 471px;
 }
 
@@ -47,18 +49,59 @@ iframe#tela {
     text-align: right;
 }
 
-
 #redessociais img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     margin: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.507);
-    box-sizing: border-box;
 }
 
 #redessociais img:hover {
     border: 3px solid rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.573);
     transition: transform .3s, border .2s;
+}
+
+/* Consultas de mídia para telas menores */
+@media (max-width: 768px) {
+    main {
+        height: auto; /* Permite que o main se ajuste ao conteúdo */
+    }
+
+    #telefone {
+        height: 500px; /* Ajusta a altura do telefone */
+        width: 248px; /* Ajusta a largura do telefone */
+    }
+
+    iframe#tela {
+        top: 60px; /* Ajusta a posição do iframe */
+        left: 18px; /* Ajusta a posição do iframe */
+        width: 212px; /* Ajusta a largura do iframe */
+        height: 371px; /* Ajusta a altura do iframe */
+    }
+
+    #redessociais img {
+        height: 40px; /* Ajusta a altura dos ícones das redes sociais */
+        width: 40px; /* Ajusta a largura dos ícones das redes sociais */
+    }
+}
+
+@media (max-width: 480px) {
+    #telefone {
+        height: 400px; /* Ajusta a altura do telefone */
+        width: 200px; /* Ajusta a largura do telefone */
+    }
+
+    iframe#tela {
+        top: 50px; /* Ajusta a posição do iframe */
+        left: 15px; /* Ajusta a posição do iframe */
+        width: 170px; /* Ajusta a largura do iframe */
+        height: 300px; /* Ajusta a altura do iframe */
+    }
+
+    #redessociais img {
+        height: 30px; /* Ajusta a altura dos ícones das redes sociais */
+        width: 30px; /* Ajusta a largura dos ícones das redes sociais */
+    }
 }
